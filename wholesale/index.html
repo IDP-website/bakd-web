@@ -9,6 +9,7 @@
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.pexels.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:ital,wght@0,400;0,500;0,600;1,400&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
 </head>
@@ -27,74 +28,67 @@
 </div></header>
 
 <main>
-  <section class="hero" style="padding-bottom:clamp(40px,5vw,64px)"><div class="wrap hero-grid">
-    <div>
+  <section class="full-hero" style="padding:0">
+    <img src="https://images.pexels.com/photos/36445061/pexels-photo-36445061.jpeg?auto=compress&cs=tinysrgb&w=2000" srcset="https://images.pexels.com/photos/36445061/pexels-photo-36445061.jpeg?auto=compress&cs=tinysrgb&w=1000 1000w, https://images.pexels.com/photos/36445061/pexels-photo-36445061.jpeg?auto=compress&cs=tinysrgb&w=2000 2000w, https://images.pexels.com/photos/36445061/pexels-photo-36445061.jpeg?auto=compress&cs=tinysrgb&w=3200 3200w" sizes="(max-width: 860px) 100vw, 50vw" alt="Two bakers shaping bread in a bakery" loading="lazy" decoding="async" loading="eager" fetchpriority="high">
+    <div class="wrap rv">
       <p class="kicker">Wholesale</p>
-      <h1>Baked by us.<br><span class="it">Finished by you.</span></h1>
-      <p class="lead">Par-baked, boxed and frozen. Finish from frozen in your own oven and your guests get pastry that tastes like it came straight from the bakery, because it did.</p>
-      <div class="row-btns">
-        <a class="btn solid" href="#account">Open a trade account <span class="arr" aria-hidden="true">→</span></a>
-        <a class="btn" href="#range">See the range</a>
-      </div>
+      <h1 style="margin:16px 0 20px;max-width:12em">Baked by us. <span class="it" style="color:var(--butter)">Finished by you.</span></h1>
+      <p class="lead" style="margin-bottom:30px">Par-baked, boxed and frozen. Finish from frozen in your own oven, and your guests get pastry that tastes like it came straight from the bakery. Because it did.</p>
+      <div class="row-btns"><a class="btn solid" href="#account">Open a trade account <span class="arr" aria-hidden="true">→</span></a><a class="btn" href="#range">See the range</a></div>
     </div>
-    <div class="ph" role="img" aria-label="Photo to come: boxed par-baked croissants"><span class="tag">Photo to come: boxes ready for delivery</span></div>
-  </div></section>
+  </section>
 
-  <section id="range" class="band"><div class="wrap">
-    <div class="sec-head">
+  <div class="marquee" aria-hidden="true"><div class="track"><span>Croissants</span><span>Sourdough</span><span>Bagels</span><span>Ciabatta</span><span>Pasteis de nata</span><span>Brioche</span><span>Bread sticks</span><span>Bread classes</span><span>Croissants</span><span>Sourdough</span><span>Bagels</span><span>Ciabatta</span><span>Pasteis de nata</span><span>Brioche</span><span>Bread sticks</span><span>Bread classes</span></div></div>
+
+  <section id="range"><div class="wrap">
+    <div class="sec-head rv">
       <p class="kicker">The par-baked range</p>
-      <h2>Priced by the box.</h2>
+      <h2>Priced by the box, <span class="it">baked by hand.</span></h2>
       <p class="lead">Mix and match across the range. We're not VAT registered, so the price you see is the price you pay.</p>
     </div>
-    <div data-tabs>
+    <div data-tabs class="rv">
       <div class="tabs" role="tablist" aria-label="Product categories"><button class="tab" role="tab" type="button" id="t-pastry" aria-controls="p-pastry" aria-selected="true">Croissants &amp; pastry</button><button class="tab" role="tab" type="button" id="t-bread" aria-controls="p-bread" aria-selected="false">Breads &amp; sticks</button><button class="tab" role="tab" type="button" id="t-buns" aria-controls="p-buns" aria-selected="false">Bagels &amp; buns</button></div>
-      <div class="plist" role="tabpanel" id="p-pastry" aria-labelledby="t-pastry"><div class="prow"><div><div class="n">Classic croissant</div><div class="d">All-butter and flaky</div></div><div class="box">Box of 16<br>R16.00 each</div><div class="pr">R256.00</div></div><div class="prow"><div><div class="n">Chocolate croissant</div><div class="d">Dark chocolate centre</div></div><div class="box">Box of 16<br>R25.00 each</div><div class="pr">R400.00</div></div><div class="prow"><div><div class="n">Almond croissant</div><div class="d">Frangipane filled, topped with almonds</div></div><div class="box">Box of 16<br>R30.00 each</div><div class="pr">R480.00</div></div><div class="prow"><div><div class="n">Ham &amp; cheese croissant</div><div class="d">Savoury, made for the lunch rush</div></div><div class="box">Box of 16<br>R37.00 each</div><div class="pr">R592.00</div></div><div class="prow"><div><div class="n">Bobotie croissant</div><div class="d">Our South African favourite</div></div><div class="box">Box of 16<br>R37.00 each</div><div class="pr">R592.00</div></div><div class="prow"><div><div class="n">Mini plain croissant</div><div class="d">Breakfast buffet size</div></div><div class="box">Box of 32<br>R10.00 each</div><div class="pr">R320.00</div></div><div class="prow"><div><div class="n">Plain cruffin</div><div class="d">Croissant dough, muffin shape</div></div><div class="box">Box of 16<br>R15.00 each</div><div class="pr">R240.00</div></div><div class="prow"><div><div class="n">Pasteis de nata</div><div class="d">Portuguese custard tart</div></div><div class="box">Box of 40<br>R16.00 each</div><div class="pr">R640.00</div></div></div><div class="plist" role="tabpanel" id="p-bread" aria-labelledby="t-bread" hidden><div class="prow"><div><div class="n">Whole wheat sourdough, 1kg</div><div class="d">Slow fermented</div></div><div class="box">Box of 4<br>R40.00 each</div><div class="pr">R160.00</div></div><div class="prow"><div><div class="n">Ciabatta, 700g</div><div class="d">Open crumb, made for sharing boards</div></div><div class="box">Box of 6<br>R34.00 each</div><div class="pr">R204.00</div></div><div class="prow"><div><div class="n">Ciabattini, 150g</div><div class="d">Sandwich size</div></div><div class="box">Box of 18<br>R8.00 each</div><div class="pr">R144.00</div></div><div class="prow"><div><div class="n">Olive bread sticks</div><div class="d">Hand-rolled</div></div><div class="box">Box of 36<br>R18.00 each</div><div class="pr">R648.00</div></div><div class="prow"><div><div class="n">Feta &amp; sun-dried tomato bread sticks</div><div class="d">Hand-rolled</div></div><div class="box">Box of 36<br>R18.00 each</div><div class="pr">R648.00</div></div></div><div class="plist" role="tabpanel" id="p-buns" aria-labelledby="t-buns" hidden><div class="prow"><div><div class="n">Bagels: sesame, poppy or plain</div><div class="d">Boiled, then baked</div></div><div class="box">Box of 24<br>R7.55 each</div><div class="pr">R181.20</div></div><div class="prow"><div><div class="n">Brioche burger buns, 85g</div><div class="d">Soft and rich, no seeds</div></div><div class="box">Box of 32<br>R8.50 each</div><div class="pr">R272.00</div></div><div class="prow"><div><div class="n">Burger buns with seeds, 100g</div><div class="d">Full burger size</div></div><div class="box">Box of 28<br>R6.50 each</div><div class="pr">R182.00</div></div><div class="prow"><div><div class="n">Burger sliders with seeds, 50g</div><div class="d">For platters and kids’ menus</div></div><div class="box">Box of 32<br>R3.91 each</div><div class="pr">R125.00</div></div><div class="prow"><div><div class="n">Petite buns with seeds, 25g</div><div class="d">Canapé and function size</div></div><div class="box">Box of 60<br>R2.20 each</div><div class="pr">R132.00</div></div></div>
+      <div role="tabpanel" id="p-pastry" aria-labelledby="t-pastry"><div class="panel-grid"><div class="pic"><img src="https://images.pexels.com/photos/34315409/pexels-photo-34315409.jpeg?auto=compress&cs=tinysrgb&w=900" srcset="https://images.pexels.com/photos/34315409/pexels-photo-34315409.jpeg?auto=compress&cs=tinysrgb&w=450 450w, https://images.pexels.com/photos/34315409/pexels-photo-34315409.jpeg?auto=compress&cs=tinysrgb&w=900 900w, https://images.pexels.com/photos/34315409/pexels-photo-34315409.jpeg?auto=compress&cs=tinysrgb&w=1440 1440w" sizes="(max-width: 860px) 100vw, 50vw" alt="Pasteis de nata on a tray" loading="lazy" decoding="async" ></div><div class="plist"><div class="prow"><div><div class="n">Classic croissant</div><div class="d">All-butter and flaky</div></div><div class="box">Box of 16<br>R16.00 each</div><div class="pr">R256.00</div></div><div class="prow"><div><div class="n">Chocolate croissant</div><div class="d">Dark chocolate centre</div></div><div class="box">Box of 16<br>R25.00 each</div><div class="pr">R400.00</div></div><div class="prow"><div><div class="n">Almond croissant</div><div class="d">Frangipane filled, topped with almonds</div></div><div class="box">Box of 16<br>R30.00 each</div><div class="pr">R480.00</div></div><div class="prow"><div><div class="n">Ham &amp; cheese croissant</div><div class="d">Savoury, made for the lunch rush</div></div><div class="box">Box of 16<br>R37.00 each</div><div class="pr">R592.00</div></div><div class="prow"><div><div class="n">Bobotie croissant</div><div class="d">Our South African favourite</div></div><div class="box">Box of 16<br>R37.00 each</div><div class="pr">R592.00</div></div><div class="prow"><div><div class="n">Mini plain croissant</div><div class="d">Breakfast buffet size</div></div><div class="box">Box of 32<br>R10.00 each</div><div class="pr">R320.00</div></div><div class="prow"><div><div class="n">Plain cruffin</div><div class="d">Croissant dough, muffin shape</div></div><div class="box">Box of 16<br>R15.00 each</div><div class="pr">R240.00</div></div><div class="prow"><div><div class="n">Pasteis de nata</div><div class="d">Portuguese custard tart</div></div><div class="box">Box of 40<br>R16.00 each</div><div class="pr">R640.00</div></div></div></div></div><div role="tabpanel" id="p-bread" aria-labelledby="t-bread" hidden><div class="panel-grid"><div class="pic"><img src="https://images.pexels.com/photos/36202913/pexels-photo-36202913.jpeg?auto=compress&cs=tinysrgb&w=900" srcset="https://images.pexels.com/photos/36202913/pexels-photo-36202913.jpeg?auto=compress&cs=tinysrgb&w=450 450w, https://images.pexels.com/photos/36202913/pexels-photo-36202913.jpeg?auto=compress&cs=tinysrgb&w=900 900w, https://images.pexels.com/photos/36202913/pexels-photo-36202913.jpeg?auto=compress&cs=tinysrgb&w=1440 1440w" sizes="(max-width: 860px) 100vw, 50vw" alt="A round sourdough loaf" loading="lazy" decoding="async" ></div><div class="plist"><div class="prow"><div><div class="n">Whole wheat sourdough, 1kg</div><div class="d">Slow fermented</div></div><div class="box">Box of 4<br>R40.00 each</div><div class="pr">R160.00</div></div><div class="prow"><div><div class="n">Ciabatta, 700g</div><div class="d">Open crumb, made for sharing boards</div></div><div class="box">Box of 6<br>R34.00 each</div><div class="pr">R204.00</div></div><div class="prow"><div><div class="n">Ciabattini, 150g</div><div class="d">Sandwich size</div></div><div class="box">Box of 18<br>R8.00 each</div><div class="pr">R144.00</div></div><div class="prow"><div><div class="n">Olive bread sticks</div><div class="d">Hand-rolled</div></div><div class="box">Box of 36<br>R18.00 each</div><div class="pr">R648.00</div></div><div class="prow"><div><div class="n">Feta &amp; sun-dried tomato bread sticks</div><div class="d">Hand-rolled</div></div><div class="box">Box of 36<br>R18.00 each</div><div class="pr">R648.00</div></div></div></div></div><div role="tabpanel" id="p-buns" aria-labelledby="t-buns" hidden><div class="panel-grid"><div class="pic"><img src="https://images.pexels.com/photos/20321206/pexels-photo-20321206.jpeg?auto=compress&cs=tinysrgb&w=900" srcset="https://images.pexels.com/photos/20321206/pexels-photo-20321206.jpeg?auto=compress&cs=tinysrgb&w=450 450w, https://images.pexels.com/photos/20321206/pexels-photo-20321206.jpeg?auto=compress&cs=tinysrgb&w=900 900w, https://images.pexels.com/photos/20321206/pexels-photo-20321206.jpeg?auto=compress&cs=tinysrgb&w=1440 1440w" sizes="(max-width: 860px) 100vw, 50vw" alt="Burgers on brioche buns" loading="lazy" decoding="async" ></div><div class="plist"><div class="prow"><div><div class="n">Bagels: sesame, poppy or plain</div><div class="d">Boiled, then baked</div></div><div class="box">Box of 24<br>R7.55 each</div><div class="pr">R181.20</div></div><div class="prow"><div><div class="n">Brioche burger buns, 85g</div><div class="d">Soft and rich, no seeds</div></div><div class="box">Box of 32<br>R8.50 each</div><div class="pr">R272.00</div></div><div class="prow"><div><div class="n">Burger buns with seeds, 100g</div><div class="d">Full burger size</div></div><div class="box">Box of 28<br>R6.50 each</div><div class="pr">R182.00</div></div><div class="prow"><div><div class="n">Burger sliders with seeds, 50g</div><div class="d">For platters and kids’ menus</div></div><div class="box">Box of 32<br>R3.91 each</div><div class="pr">R125.00</div></div><div class="prow"><div><div class="n">Petite buns with seeds, 25g</div><div class="d">Canapé and function size</div></div><div class="box">Box of 60<br>R2.20 each</div><div class="pr">R132.00</div></div></div></div></div>
     </div>
     <p class="fineprint">Prices as at 17 September 2026 and may change. Minimum order and delivery days: <span class="todo">[TO CONFIRM]</span>. Fresh-baked loaves and pastries are also available: ask for the fresh price list.</p>
   </div></section>
 
-  <section><div class="wrap">
-    <div class="sec-head">
-      <p class="kicker">How it works</p>
-      <h2>Four steps to a full pastry case.</h2>
-    </div>
+  <section class="band"><div class="wrap">
+    <div class="sec-head rv"><p class="kicker">How it works</p><h2>Four steps to a <span class="it">full pastry case.</span></h2></div>
     <div class="steps">
-      <div class="card"><div class="num">01</div><h3>Open an account</h3><p>Send us your business details below. We set up your account and confirm delivery days for your area.</p></div>
-      <div class="card"><div class="num">02</div><h3>Order by the box</h3><p>Choose from the range by the box and mix across croissants, breads and buns.</p></div>
-      <div class="card"><div class="num">03</div><h3>We deliver frozen</h3><p>Par-baked and frozen, straight to your kitchen on your delivery day. <span class="todo">[AREAS]</span></p></div>
-      <div class="card"><div class="num">04</div><h3>Bake &amp; serve</h3><p>Finish from frozen in a few minutes. It looks like you have a baker on staff.</p></div>
+      <div class="card rv"><div class="num">01</div><h3>Open an account</h3><p>Send us your business details below. We set up your account and confirm delivery days for your area.</p></div>
+      <div class="card rv"><div class="num">02</div><h3>Order by the box</h3><p>Choose from the range by the box and mix across croissants, breads and buns.</p></div>
+      <div class="card rv"><div class="num">03</div><h3>We deliver frozen</h3><p>Par-baked and frozen, straight to your kitchen on your delivery day. <span class="todo">[AREAS]</span></p></div>
+      <div class="card rv"><div class="num">04</div><h3>Bake &amp; serve</h3><p>Finish from frozen in a few minutes. It looks like you have a baker on staff.</p></div>
     </div>
   </div></section>
 
-  <section id="account" class="olive"><div class="wrap grid-2">
-    <div>
-      <p class="kicker">Trade account</p>
-      <h2 style="margin:16px 0 18px">Let's get your oven stocked.</h2>
-      <p class="lead">Tell us a little about your business and what you'd like to order. We'll come back to you within a working day with your account details and delivery days.</p>
+  <section style="padding:0" class="olive" id="account"><div class="split">
+    <div class="pic"><img src="https://images.pexels.com/photos/35095957/pexels-photo-35095957.jpeg?auto=compress&cs=tinysrgb&w=1400" srcset="https://images.pexels.com/photos/35095957/pexels-photo-35095957.jpeg?auto=compress&cs=tinysrgb&w=700 700w, https://images.pexels.com/photos/35095957/pexels-photo-35095957.jpeg?auto=compress&cs=tinysrgb&w=1400 1400w, https://images.pexels.com/photos/35095957/pexels-photo-35095957.jpeg?auto=compress&cs=tinysrgb&w=2240 2240w" sizes="(max-width: 860px) 100vw, 50vw" alt="Croissants in a bakery display" loading="lazy" decoding="async" ></div>
+    <div class="txt">
+      <div class="rv">
+        <p class="kicker">Trade account</p>
+        <h2 style="margin:16px 0 14px">Let's get your <span class="it" style="color:var(--butter)">oven stocked.</span></h2>
+        <p class="lead" style="margin-bottom:26px">Tell us a little about your business. We'll come back within a working day with your account and delivery days.</p>
+      </div>
+      <form class="form" data-enquiry style="color:var(--ink)">
+        <label>Business name<input name="business" autocomplete="organization" required></label>
+        <div class="two"><label>Your name<input name="name" autocomplete="name" required></label><label>Phone<input name="phone" type="tel" autocomplete="tel" required></label></div>
+        <label>Email<input name="email" type="email" autocomplete="email" required></label>
+        <div class="two"><label>Type of business<select name="type"><option>Café</option><option>Restaurant</option><option>Hotel or guesthouse</option><option>Deli or shop</option><option>Caterer</option><option>Other</option></select></label><label>Town<input name="town" placeholder="e.g. Knysna"></label></div>
+        <label>What would you like to order, and how often?<textarea name="order"></textarea></label>
+        <button class="btn solid" type="submit">Send trade enquiry</button>
+        <p class="ok" role="status">Thanks! This form isn't connected yet. It will be once BAKD's contact details are confirmed.</p>
+      </form>
     </div>
-    <form class="form" data-enquiry style="color:var(--ink)">
-      <label>Business name<input name="business" autocomplete="organization" required></label>
-      <div class="two">
-        <label>Your name<input name="name" autocomplete="name" required></label>
-        <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
-      </div>
-      <label>Email<input name="email" type="email" autocomplete="email" required></label>
-      <div class="two">
-        <label>Type of business<select name="type"><option>Café</option><option>Restaurant</option><option>Hotel or guesthouse</option><option>Deli or shop</option><option>Caterer</option><option>Other</option></select></label>
-        <label>Town<input name="town" placeholder="e.g. Knysna"></label>
-      </div>
-      <label>What would you like to order, and how often?<textarea name="order"></textarea></label>
-      <button class="btn solid" type="submit">Send trade enquiry</button>
-      <p class="ok" role="status">Thanks! This form isn't connected yet. It will be once BAKD's contact details are confirmed.</p>
-    </form>
   </div></section>
 </main>
 
 <footer class="site-foot"><div class="wrap">
   <div><b class="logo-f">BAKD</b><p>Artisan bakery in Knysna. Wholesale for the Garden Route, and bread classes for everyone.</p></div>
-  <div><h4>Visit</h4><a href="/wholesale">Wholesale</a><a href="/classes">Bread classes</a><a href="/#contact">Contact</a></div>
+  <div><h4>Explore</h4><a href="/wholesale">Wholesale</a><a href="/classes">Bread classes</a><a href="/#contact">Contact</a></div>
   <div><h4>Find us</h4><p><span class="todo">[ADDRESS]</span><br>Knysna, Western Cape</p></div>
-  <p class="base">© <span id="year">2026</span> BAKD Bakery</p>
+  <p class="base">© <span id="year">2026</span> BAKD Bakery · Photography: Pexels (placeholder until BAKD's own photos)</p>
 </div></footer>
 <script src="/assets/site.js"></script>
 </body>
